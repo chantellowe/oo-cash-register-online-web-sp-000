@@ -7,7 +7,7 @@ class CashRegister
   end
   
   def discount
-    total * 0.2 
+    total - (total * 0.2) 
   end
   
   
