@@ -1,6 +1,6 @@
 class CashRegister
   
-  attr_accessor :total, :discount, :last_transaction, :items
+  attr_accessor :total, :discount, :last_transaction, :items, :price
   
   def initialize(discount = 0)
     @total = 0
@@ -9,6 +9,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
+    @price = price
     if quantity > 1 
       counter = 0 
       while counter < quantity
