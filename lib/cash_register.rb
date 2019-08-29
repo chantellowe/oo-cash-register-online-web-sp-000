@@ -15,6 +15,7 @@ class CashRegister
     if discount > 0 
       @saved = (price * discount)/100.0 
       @total -= @saved
+    end
   end
   
   
