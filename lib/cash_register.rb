@@ -16,7 +16,7 @@ class CashRegister
     if @discount > 0 
       @saved = (price * discount)/100
       @total -= @saved
-      puts "After the discount, the total comes to $#{@total}."
+      p "After the discount, the total comes to $#{@total}."
     end
   end
   
