@@ -32,6 +32,10 @@ class CashRegister
     end
   end
   
+  def self.void_last_transaction
+    
+  end
+  
   
   
   
