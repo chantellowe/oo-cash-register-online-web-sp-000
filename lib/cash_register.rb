@@ -35,11 +35,11 @@ class CashRegister
   end
   
   def void_last_transaction
-    #if #the last item has been removed
+    if @items.pop
       @total -= @price
-    #elsif #all items have been removed
-      #@total -= @last_transaction
-    #end
+    elsif @items.clear
+      @total -= @last_transaction
+    end
   end
   
   
