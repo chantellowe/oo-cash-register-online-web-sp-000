@@ -13,7 +13,8 @@ class CashRegister
     self.total += price * quantity
     if quantity > 1 
       counter = 0 
-      when 
+      while counter < quantity
+      
       @items << title
     end
   end
