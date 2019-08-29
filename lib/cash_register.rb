@@ -11,7 +11,7 @@ class CashRegister
   end
   
   def add_item(title, price)
-    discount * price
+    total - price
   end
   
   
